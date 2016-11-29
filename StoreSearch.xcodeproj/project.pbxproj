@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		325AE5181DEC98F900760027 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325AE5171DEC98F900760027 /* SearchResult.swift */; };
+		325AE51A1DECA0AA00760027 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AE5191DECA0AA00760027 /* SearchResultCell.xib */; };
 		326D9C2A1DEC8DF20087DAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D9C291DEC8DF20087DAE5 /* AppDelegate.swift */; };
 		326D9C2C1DEC8DF20087DAE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D9C2B1DEC8DF20087DAE5 /* SearchViewController.swift */; };
 		326D9C2F1DEC8DF20087DAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326D9C2D1DEC8DF20087DAE5 /* Main.storyboard */; };
 		326D9C311DEC8DF20087DAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326D9C301DEC8DF20087DAE5 /* Assets.xcassets */; };
 		326D9C341DEC8DF20087DAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326D9C321DEC8DF20087DAE5 /* LaunchScreen.storyboard */; };
+		326F4BB31DEDB28600B1E70F /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F4BB21DEDB28600B1E70F /* SearchResultCell.swift */; };
+		326F4BB51DEDB4A400B1E70F /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326F4BB41DEDB4A400B1E70F /* NothingFoundCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		325AE5171DEC98F900760027 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		325AE5191DECA0AA00760027 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		326D9C261DEC8DF20087DAE5 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326D9C291DEC8DF20087DAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326D9C2B1DEC8DF20087DAE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		326D9C301DEC8DF20087DAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326D9C331DEC8DF20087DAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		326D9C351DEC8DF20087DAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326F4BB21DEDB28600B1E70F /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		326F4BB41DEDB4A400B1E70F /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				326D9C321DEC8DF20087DAE5 /* LaunchScreen.storyboard */,
 				326D9C351DEC8DF20087DAE5 /* Info.plist */,
 				325AE5171DEC98F900760027 /* SearchResult.swift */,
+				325AE5191DECA0AA00760027 /* SearchResultCell.xib */,
+				326F4BB21DEDB28600B1E70F /* SearchResultCell.swift */,
+				326F4BB41DEDB4A400B1E70F /* NothingFoundCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -129,6 +138,8 @@
 			files = (
 				326D9C341DEC8DF20087DAE5 /* LaunchScreen.storyboard in Resources */,
 				326D9C311DEC8DF20087DAE5 /* Assets.xcassets in Resources */,
+				325AE51A1DECA0AA00760027 /* SearchResultCell.xib in Resources */,
+				326F4BB51DEDB4A400B1E70F /* NothingFoundCell.xib in Resources */,
 				326D9C2F1DEC8DF20087DAE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +153,7 @@
 			files = (
 				326D9C2C1DEC8DF20087DAE5 /* SearchViewController.swift in Sources */,
 				325AE5181DEC98F900760027 /* SearchResult.swift in Sources */,
+				326F4BB31DEDB28600B1E70F /* SearchResultCell.swift in Sources */,
 				326D9C2A1DEC8DF20087DAE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
