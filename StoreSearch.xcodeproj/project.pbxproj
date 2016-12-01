@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32147B6E1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32147B6D1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift */; };
 		325AE5181DEC98F900760027 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325AE5171DEC98F900760027 /* SearchResult.swift */; };
 		325AE51A1DECA0AA00760027 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AE5191DECA0AA00760027 /* SearchResultCell.xib */; };
 		326D9C2A1DEC8DF20087DAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D9C291DEC8DF20087DAE5 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32147B6D1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		325AE5171DEC98F900760027 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		325AE5191DECA0AA00760027 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		326D9C261DEC8DF20087DAE5 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				326F4BB21DEDB28600B1E70F /* SearchResultCell.swift */,
 				326F4BB41DEDB4A400B1E70F /* NothingFoundCell.xib */,
 				32E6FA511DEF267800BBB4C7 /* LoadingCell.xib */,
+				32147B6D1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				325AE5181DEC98F900760027 /* SearchResult.swift in Sources */,
 				326F4BB31DEDB28600B1E70F /* SearchResultCell.swift in Sources */,
 				326D9C2A1DEC8DF20087DAE5 /* AppDelegate.swift in Sources */,
+				32147B6E1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
