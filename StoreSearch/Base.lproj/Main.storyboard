@@ -76,10 +76,126 @@
                         <outlet property="searchBar" destination="W0Y-RJ-fwq" id="mZe-iJ-2Cv"/>
                         <outlet property="segmentedControl" destination="Cra-if-tgz" id="DIq-HS-Oil"/>
                         <outlet property="tableView" destination="sPX-GB-8dk" id="14c-a0-lge"/>
+                        <segue destination="eDs-LK-Ban" kind="presentation" identifier="ShowDetail" id="l1c-Pl-GOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="A0o-jR-MnQ">
+            <objects>
+                <viewController id="eDs-LK-Ban" customClass="DetailViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7rh-UI-Z9H"/>
+                        <viewControllerLayoutGuide type="bottom" id="oVz-LT-DIz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efj-Fh-ucf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-13-5GJ" userLabel="Pop-up View">
+                                <rect key="frame" x="40" y="164" width="240" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep2-4q-P5h" userLabel="Close Button">
+                                        <rect key="frame" x="3" y="0.0" width="15" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CloseButton"/>
+                                        <connections>
+                                            <action selector="close" destination="eDs-LK-Ban" eventType="touchUpInside" id="QIG-WN-BXW"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXV-4v-HTW">
+                                        <rect key="frame" x="70" y="9" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="05n-a9-n2t">
+                                        <rect key="frame" x="10" y="115" width="220" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hk-qJ-2kH">
+                                        <rect key="frame" x="10" y="142" width="220" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-63-9sS">
+                                        <rect key="frame" x="10" y="165" width="43" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLf-gw-aGD">
+                                        <rect key="frame" x="10" y="188" width="51" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6N-Uf-B9A">
+                                        <rect key="frame" x="165" y="210" width="69" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="pwZ-MS-g6g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="$9.99" backgroundImage="PriceButton"/>
+                                        <connections>
+                                            <action selector="openInStore" destination="eDs-LK-Ban" eventType="touchUpInside" id="Zym-Re-TUq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kky-xN-Luw">
+                                        <rect key="frame" x="70" y="188" width="160" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kind value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDO-0z-VNh">
+                                        <rect key="frame" x="70" y="165" width="160" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.94999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="UBp-xZ-Xgt"/>
+                                    <constraint firstAttribute="bottom" secondItem="l6N-Uf-B9A" secondAttribute="bottom" constant="6" id="WIc-7g-lzB"/>
+                                    <constraint firstAttribute="height" constant="240" id="cnX-cy-7Ot"/>
+                                    <constraint firstAttribute="trailing" secondItem="l6N-Uf-B9A" secondAttribute="trailing" constant="6" id="wmG-qr-mAK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UEb-13-5GJ" firstAttribute="centerY" secondItem="efj-Fh-ucf" secondAttribute="centerY" id="Uxi-Fl-BZP"/>
+                            <constraint firstItem="UEb-13-5GJ" firstAttribute="centerX" secondItem="efj-Fh-ucf" secondAttribute="centerX" id="VgS-UD-33V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="5hk-qJ-2kH" id="2n5-8Y-tOG"/>
+                        <outlet property="artworkImageView" destination="ZXV-4v-HTW" id="5h1-nG-kTY"/>
+                        <outlet property="genreLabel" destination="Kky-xN-Luw" id="ZgC-J2-G12"/>
+                        <outlet property="kindLabel" destination="xDO-0z-VNh" id="EPO-Fx-w5h"/>
+                        <outlet property="nameLabel" destination="05n-a9-n2t" id="xfV-BK-1qu"/>
+                        <outlet property="popupView" destination="UEb-13-5GJ" id="Ioz-PU-uYe"/>
+                        <outlet property="priceButton" destination="l6N-Uf-B9A" id="y7T-oQ-gXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4s-yf-XE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027.5" y="34.859154929577464"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="CloseButton" width="15" height="15"/>
+        <image name="PriceButton" width="11" height="24"/>
+    </resources>
 </document>
