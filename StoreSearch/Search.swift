@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 typealias SearchComplete = (Bool) -> Void
 
@@ -42,6 +43,7 @@ class Search {
                        completion: @escaping SearchComplete) {
         if !text.isEmpty {
             dataTask?.cancel()
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             
             state = .loading
             
@@ -73,6 +75,7 @@ class Search {
                 }
                 
                 DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
                     completion(success)
                 }
             })
