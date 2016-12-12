@@ -51,11 +51,17 @@ class Search {
             let session = URLSession.shared
             dataTask = session.dataTask(with: url, completionHandler: {
                 data, response, error in
-                
-                self.state = .notSearchedYet
+
+                var newState = State.notSearchedYet
                 var success = false
                 
                 if let error = error as? NSError, error.code == -999 {
+                    // self.state = .notSearchedYet
+                    // XXX (this bit may actually not matter since we only cancel to
+                    // start a new search anyway)
+                    DispatchQueue.main.sync {
+                        self.state = .notSearchedYet
+                    }
                     return // Search was cancelled
                 }
                 
@@ -66,15 +72,18 @@ class Search {
                     
                     var searchResults = self.parse(dictionary: jsonDictionary)
                     if  searchResults.isEmpty {
-                        self.state = .noResults
+                        // self.state = .noResults
+                        newState = .noResults // XXX
                     } else {
                         searchResults.sort(by: <)
-                        self.state = .results(searchResults)
+                        // self.state = .results(searchResults)
+                        newState = .results(searchResults) // XXX
                     }
                     success = true
                 }
                 
                 DispatchQueue.main.async {
+                    self.state = newState // XXX
                     UIApplication.shared.isNetworkActivityIndicatorVisible = false
                     completion(success)
                 }
@@ -86,11 +95,15 @@ class Search {
     
     private func iTunesURL(searchText: String, category: Category) -> URL {
         let entityName = category.entityName
-        let escapedSearchText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+        let locale = Locale.autoupdatingCurrent
+        let language = locale.identifier
+        let countryCode = locale.regionCode ?? "en_US"
         
-        let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200&entity=%@", escapedSearchText, entityName)
+        let escapedSearchText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+        let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200&entity=%@&lang=%@&country=%@", escapedSearchText, entityName, language, countryCode)
         
         let url = URL(string: urlString)
+        print("URL: \(url!)")
         return url!
     }
     

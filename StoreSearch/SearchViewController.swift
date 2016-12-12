@@ -112,8 +112,8 @@ class SearchViewController: UIViewController {
     
     func showNetworkError() {
         let alert = UIAlertController(
-            title: "Whoops...",
-            message: "There was an error reading from the iTunes Store. Please try again.",
+            title: NSLocalizedString("Whoops...", comment: "Localized UIAlertController title: Whoops..."),
+            message: NSLocalizedString("There was an error reading from the iTunes Store. Please try again.", comment: "Localized UIAlertController message: There was an error reading from the iTunes Store. Please try again."),
             preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -139,9 +139,8 @@ extension SearchViewController: UISearchBarDelegate {
                                     }
                                     self.tableView.reloadData()
             })
-        
-            // cause a bug when do a search the second time
-            // tableView.reloadData()
+
+            tableView.reloadData()
             self.landscapeViewController?.searchResultsReceived()
             searchBar.resignFirstResponder()
         }

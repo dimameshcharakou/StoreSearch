@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  StoreSearch
+
+  Created by Dzmitry Meshcharakou on 12.12.16.
+  Copyright © 2016 Dzmitry Meshcharakou. All rights reserved.
+*/
+
+/* Localized kind: Album */
+"Album" = "Album";
+
+/* Localized kind: Software */
+"App" = "App";
+
+/* Localized kind: Audio Book */
+"Audio Book" = "Audio Book";
+
+/* Localized kind: Book */
+"Book" = "Book";
+
+/* Localized kind: E-Book */
+"E-Book" = "E-Book";
+
+/* Localized kind: Feature Movie */
+"Movie" = "Movie";
+
+/* Localized kind: Music Video */
+"Music Video" = "Music Video";
+
+/* Localized kind: Podcast */
+"Podcast" = "Podcast";
+
+/* Localized kind: Song */
+"Song" = "Song";
+
+/* Localized kind: TV Episode */
+"TV Episode" = "TV Episode";
+
+/* Localized artistNameLabel: Unknown */
+"Unknown" = "Unknown";
+
+/* Localized priceText: Free */
+"Free" = "Free";
+
+/* Localized UILabel: Nothing found */
+"Nothing Found" = "Nothing Found";
+
+/* Localized UIAlertController title: Whoops... */
+"Whoops..." = "Whoops...";
+
+/* Localized UIAlertController message: There was an error reading from the iTunes Store. Please try again. */
+"There was an error reading from the iTunes Store. Please try again." = "There was an error reading from the iTunes Store. Please try again.";
+
+/* Format for artist name label */
+"ARTIST_NAME_LABEL_FORMAT" = "%1$@ (%2$@)";

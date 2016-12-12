@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoadingCell" id="aOR-wC-g4V">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aOR-wC-g4V" id="DM6-wC-FpN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7V-fi-9TG">
+                        <rect key="frame" x="98" y="9" width="124.5" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsW-HS-9es">
+                                <rect key="frame" x="20" y="20" width="67.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tgI-i4-GfM">
+                                <rect key="frame" x="84.5" y="20" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tgI-i4-GfM" firstAttribute="top" secondItem="g7V-fi-9TG" secondAttribute="top" constant="20" id="CJ7-E1-Bl5"/>
+                            <constraint firstAttribute="trailing" secondItem="dsW-HS-9es" secondAttribute="trailing" constant="37" id="E4j-4l-G7w"/>
+                            <constraint firstAttribute="bottom" secondItem="tgI-i4-GfM" secondAttribute="bottom" constant="21" id="G8S-Zb-qlz"/>
+                            <constraint firstAttribute="bottom" secondItem="dsW-HS-9es" secondAttribute="bottom" constant="20" id="HDU-E7-ajG"/>
+                            <constraint firstItem="dsW-HS-9es" firstAttribute="leading" secondItem="g7V-fi-9TG" secondAttribute="leading" constant="20" id="KLc-nR-Oij"/>
+                            <constraint firstItem="dsW-HS-9es" firstAttribute="top" secondItem="g7V-fi-9TG" secondAttribute="top" constant="20" id="fHT-m6-ZyT"/>
+                            <constraint firstAttribute="trailing" secondItem="tgI-i4-GfM" secondAttribute="trailing" constant="20" id="zD9-QC-Ocn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g7V-fi-9TG" firstAttribute="centerY" secondItem="DM6-wC-FpN" secondAttribute="centerY" id="3yd-fp-ujw"/>
+                    <constraint firstItem="g7V-fi-9TG" firstAttribute="centerX" secondItem="DM6-wC-FpN" secondAttribute="centerX" id="PcJ-OD-6VS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="51" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>
