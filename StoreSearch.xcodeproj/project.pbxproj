@@ -27,6 +27,7 @@
 		32A04BB91DF5D5CF0057F879 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A04BB81DF5D5CF0057F879 /* LandscapeViewController.swift */; };
 		32C6342C1DF966F7004E62AE /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6342B1DF966F6004E62AE /* FadeOutAnimationController.swift */; };
 		32C877B41DFDDD4D002F05B2 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C877B61DFDDD4D002F05B2 /* LoadingCell.xib */; };
+		32C8C99F1E05757A001FCE46 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C8C99E1E05757A001FCE46 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		32C877B51DFDDD4D002F05B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
 		32C877B81DFDDD51002F05B2 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
 		32C877BA1DFDDDDF002F05B2 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		32C8C99E1E05757A001FCE46 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				326D9C2B1DEC8DF20087DAE5 /* SearchViewController.swift */,
 				328134681DF493F200B06634 /* SlideOutAnimationController.swift */,
 				32147B6D1DF05C0B00576AB4 /* UIImageView+DownloadImage.swift */,
+				32C8C99E1E05757A001FCE46 /* MenuViewController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				327622DC1DFC311E00216EA2 /* Search.swift in Sources */,
 				326D9C2C1DEC8DF20087DAE5 /* SearchViewController.swift in Sources */,
 				32147B721DF06F9B00576AB4 /* DimmingPresentationController.swift in Sources */,
+				32C8C99F1E05757A001FCE46 /* MenuViewController.swift in Sources */,
 				32C6342C1DF966F7004E62AE /* FadeOutAnimationController.swift in Sources */,
 				325AE5181DEC98F900760027 /* SearchResult.swift in Sources */,
 				326F4BB31DEDB28600B1E70F /* SearchResultCell.swift in Sources */,
@@ -370,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meshcharakou.StoreSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -383,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meshcharakou.StoreSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
